@@ -31,6 +31,7 @@ fs.writeFileSync(outputPath, JSON.stringify(tree, null, 2));
 
 console.log(`📄 File tree written to ${outputPath}`);
 
+// Test comment
 // This file tells web crawlers (like Googlebot, Bingbot, etc.) how to handle the page. Here's what each directive means:
 
 // 🔒 noindex

@@ -1,4 +1,3 @@
-
 # Modern Portfolio Website
 
 A responsive portfolio website built with React, TypeScript, Tailwind CSS, and shadcn/ui components. Features include:

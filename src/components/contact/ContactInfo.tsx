@@ -23,6 +23,14 @@ const contactInfo = [
   }
 ];
 
+import githubIcon from "@/assets/icons/github.svg";
+import linkedinIcon from "@/assets/icons/linkedin.png";
+
+const icons = {
+  github: githubIcon,
+  linkedin: linkedinIcon,
+};
+
 const ContactInfo = () => {
   return (
     <div className="space-y-6">
@@ -49,7 +57,7 @@ const ContactInfo = () => {
         </Card>
       ))}
 
-      <Card className="glass-card">
+      {/* <Card className="glass-card">
         <div className="p-6">
           <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
           <div className="flex space-x-4">
@@ -69,7 +77,30 @@ const ContactInfo = () => {
             ))}
           </div>
         </div>
+      </Card> */}
+
+      <Card className="glass-card">
+        <div className="p-6">
+          <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
+          <div className="flex space-x-4">
+            {["github", "linkedin"].map((platform) => (
+              <a
+                key={platform}
+                href="#"
+                className="bg-white/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
+                aria-label={`Follow on ${platform}`}
+              >
+                <img
+                  src={icons[platform]}
+                  alt={platform}
+                  className="w-5 h-5"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
       </Card>
+
     </div>
   );
 };

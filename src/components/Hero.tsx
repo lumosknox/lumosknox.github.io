@@ -77,7 +77,7 @@ const Hero = () => {
           className="max-w-3xl mx-auto md:mx-0"
         >
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="text-foreground">Hi, I'm </span>
+            <span className="text-foreground">Hi, I am </span>
             <span className="text-gradient">Madhav Kode</span>
           </h1>
           

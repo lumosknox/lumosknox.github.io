@@ -19,7 +19,7 @@ const ErrorFallback = ({ error, componentName }: { error: Error; componentName: 
 const Index = () => {
 
   useEffect(() => {
-    document.title = "Modern Portfolio | Your Name";
+    document.title = "Madhav Kode | Portfolio";
   }, []);
 
   return (

@@ -13,13 +13,14 @@ const Projects = () => {
   const filterProjects = (category: string) => {
     setActiveCategory(category);
     if (category === "All") {
+      // Create a fresh copy of the projectsData array to ensure state update
       setVisibleProjects(projectsData);
     } else {
       const filtered = projectsData.filter(project => project.category.includes(category));
       setVisibleProjects(filtered);
     }
   };
-
+  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { 

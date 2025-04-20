@@ -28,8 +28,8 @@ export const projectsData: Project[] = [
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=400&h=300",
     category: ["Mobile", "Web"],
     technologies: ["React Native", "Firebase", "GraphQL"],
-    liveUrl: "#",
-    sourceUrl: "#"
+    // liveUrl: "#",
+    // sourceUrl: "#"
   },
   {
     id: 4,
@@ -63,4 +63,7 @@ export const projectsData: Project[] = [
   }
 ];
 
-export const allCategories = ["All", ...new Set(projectsData.flatMap(project => project.category))];
+// export const allCategories = ["All", ...new Set(projectsData.flatMap(project => project.category))];
+// Manual ordering of categories
+// export const allCategories = ["All", "Frontend", "Backend", "NLP", "Web", "Data", "AI"];
+export const allCategories = ["All"];

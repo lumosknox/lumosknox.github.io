@@ -1,4 +1,4 @@
-import { useEffect, Suspense } from 'react';
+import { useEffect } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -7,7 +7,6 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
-import { motion, useScroll, useSpring } from 'framer-motion';
 
 // Simple fallback component for when sections fail to load
 const ErrorFallback = ({ error, componentName }: { error: Error; componentName: string }) => (
@@ -18,12 +17,6 @@ const ErrorFallback = ({ error, componentName }: { error: Error; componentName: 
 );
 
 const Index = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
 
   useEffect(() => {
     document.title = "Modern Portfolio | Your Name";
@@ -31,11 +24,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Progress Bar */}
-      <motion.div 
-        className="fixed top-0 left-0 right-0 h-1 bg-primary z-50 origin-left" 
-        style={{ scaleX }}
-      />
 
       <ErrorBoundary fallbackRender={({ error }) => <ErrorFallback error={error} componentName="Header" />}>
         <Header />

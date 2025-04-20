@@ -26,7 +26,7 @@ const rootDir = path.join(__dirname, "src"); // modify if you want to start from
 const tree = getFileTree(rootDir);
 
 // Output to JSON file
-const outputPath = path.join(__dirname, "file-tree.json");
+const outputPath = path.join(__dirname, "file_list_as_JSON.json");
 fs.writeFileSync(outputPath, JSON.stringify(tree, null, 2));
 
 console.log(`📄 File tree written to ${outputPath}`);

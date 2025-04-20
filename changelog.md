@@ -22,10 +22,15 @@ The format is based on [Keep a Changelog]("https"//keepachangelog.com/en/1.1.0/)
 - "Fixed" for any bug fixes.
 - "Security" in case of vulnerabilities.
 
-## [Unreleased]
+## [1.0.1] - 2025-04-20
 
-- Rename master branch to main
-- Create a branch to remove the progress bar, then merge branch to main
+### Changed
+
+- Rename master branch to main.
+
+### Removed
+
+- Removed progress bar in the header.
 
 ## [1.0.0] - 2025-04-20
 

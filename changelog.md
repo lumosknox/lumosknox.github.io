@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog]("https"//keepachangelog.com/en/1.1.0/)
 - "Fixed" for any bug fixes.
 - "Security" in case of vulnerabilities.
 
+## [Unreleased]
+
+- Parallax effect
+- Working Day and night mode
+- Deployed projects
+
 ## [1.0.1] - 2025-04-20
 
 ### Changed

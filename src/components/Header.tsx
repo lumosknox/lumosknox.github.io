@@ -49,7 +49,7 @@ const Header = () => {
           
           <Button 
             className="bg-primary/90 hover:bg-primary text-white"
-            onClick={() => window.open('/resume.pdf', '_blank')}
+            onClick={() => window.open('/Resume1_SDE_v5.pdf', '_blank')}
           >
             Resume
           </Button>

@@ -15,7 +15,7 @@ const Footer = () => {
               Creating beautiful and functional web experiences with a focus on user experience and performance.
             </p>
             <div className="flex space-x-4">
-              {["github", "linkedin", "twitter", "instagram"].map((platform) => (
+              {[].map((platform) => (
                 <a 
                   key={platform}
                   href="#" 
@@ -52,9 +52,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-3 text-foreground/70">
-              <li>San Francisco, CA</li>
-              <li>yourname@example.com</li>
-              <li>+1 (123) 456-7890</li>
+              <li>Tampa, FL (Relocatable anywhere in USA)</li>
+              <li>madhavkode5@gmail.com</li>
             </ul>
           </div>
         </div>

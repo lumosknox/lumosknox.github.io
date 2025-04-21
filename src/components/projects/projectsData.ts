@@ -66,4 +66,4 @@ export const projectsData: Project[] = [
 // export const allCategories = ["All", ...new Set(projectsData.flatMap(project => project.category))];
 // Manual ordering of categories
 // export const allCategories = ["All", "Frontend", "Backend", "NLP", "Web", "Data", "AI"];
-export const allCategories = ["All"];
+export const allCategories = [];

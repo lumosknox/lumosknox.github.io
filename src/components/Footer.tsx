@@ -62,7 +62,7 @@ const Footer = () => {
         
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <p className="text-foreground/50 text-sm mb-4 sm:mb-0">
-            © {currentYear} Your Name. All Rights Reserved.
+            © {currentYear} Madhav Kode. All Rights Reserved.
           </p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -70,7 +70,7 @@ const Footer = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-foreground/50 text-sm"
           >
-            Designed & Built with ❤️
+            {/* Designed & Built with ❤️ */}
           </motion.p>
         </div>
       </div>

@@ -24,7 +24,7 @@ The format is based on [Keep a Changelog]("https"//keepachangelog.com/en/1.1.0/)
 
 ## [Unreleased]
 
-- Parallax effect
+- Parallax effect with a picture on the homepage
 - Working Day and night mode
 - Deployed projects
 
